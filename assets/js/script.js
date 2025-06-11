@@ -82,12 +82,12 @@ function generateMembersMarkup(member) {
 
   const memberMarkup = `
     <div class="col">
-      <div class="card">
+      <div class="card bg-black">
           <div class="card-body">
               <img src="assets/${img}" alt="" class="card-img-top">
-              <h3>${name}</h3>
-              <div>${role}</div>
-              <div>${email}</div>
+              <h3 class="text-light">${name}</h3>
+              <div class="text-light">${role}</div>
+              <div class="text-info">${email}</div>
           </div>
       </div>
     </div>
