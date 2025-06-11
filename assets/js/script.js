@@ -38,9 +38,30 @@ const teamMembers = [
 ];
 
 // DOM
+const titleEl = document.getElementById("title");
+const paragraphEl = document.querySelector("p");
 const rowEl = document.querySelector(".row");
-// console.log(rowEl);
+// console.log(titleEl, rowEl);
 
+// add title
+const titleMarkup = `Meet our Team`;
+
+function generateTitleMarkup(title) {
+  title.insertAdjacentHTML("beforeend", titleMarkup);
+}
+
+generateTitleMarkup(titleEl);
+
+// add paragraph
+const paragraphMarkup = `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere architecto accusamus sed hic omnis, eos quibusdam! Aspernatur non facilis eos aliquid quam accusamus voluptatem eius, officia incidunt! Nesciunt, adipisci illum.`;
+
+function generateParagraphMarkup(paragraph) {
+  paragraph.insertAdjacentHTML("beforeend", paragraphMarkup);
+}
+
+generateParagraphMarkup(paragraphEl);
+
+// add cards
 renderTeamMembers(teamMembers, rowEl);
 
 function renderTeamMembers(teamMembers, nodeEl) {
