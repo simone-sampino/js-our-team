@@ -36,3 +36,7 @@ const teamMembers = [
     img: "img/female3.png",
   },
 ];
+
+// DOM
+const rowEl = document.querySelector(".row");
+console.log(rowEl);
